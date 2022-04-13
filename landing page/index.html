@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav id="navbar" class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1 id="landing-title">Landing Page </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>Section 1</h2>
+        <p>A landing page is created specifically for attracting users for a marketing or advertising campaign (for example, a Google text ad or display ad). Generally, it's not only a page where the visitor first “lands”, but it is also a page which has content that will attract and keep users on the site, making it essential to the success of the campaign.</p>
+
+        <p>A landing page is a great method to gain traffic and impress your audience with your brand. Data shows that almost 68% of business websites use landing pages to attract users and get clicks. The landing page clearly guides users to learn about or use a product or service. Combined with a proper CTA button, the landing page encourages users to take action, which can translate into profits for your business.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>Section 2</h2>
+        <p>In digital marketing, a landing page is a standalone web page, created specifically for a marketing or advertising campaign. It’s where a visitor “lands” after they click on a link in an email, or ads from Google, Bing, YouTube, Facebook, Instagram, Twitter, or similar places on the web.</p>
+
+        <p>Unlike web pages, which typically have many goals and encourage exploration, landing pages are designed with a single focus or goal, known as a call to action (or CTA, for short).</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>Section 3</h2>
+        <p>Organic Search Traffic
+The term “organic traffic” refers to any visitors who come from an unpaid source—like the bottom half of Google or Bing search results (SERPs). By creating compelling, legitimately useful content on your website or landing pages, you can ensure that your business appears more frequently in related searches. The higher your content ranks, the better.</p>
+
+        <p>Calling it “unpaid” is a little bit misleading, however. It doesn’t mean there isn’t time and money invested in ranking. (If only!) There’s an entire field of professionals dedicated to squeezing as much organic traffic from Google as possible through a balance of careful strategy, technical know-how, and brilliant content creation. </p>
+      </div>
+    </section>
+
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Section 4</h2>
+        <p>Paid Social Traffic
+Running ads on social media sites like Facebook, Instagram, Twitter, or LinkedIn is a kickass way to target people and communities who’ll be particularly interested in your brand, regardless of whether they’re in the market yet.Instead of people searching for “cheese of the month club,” you might advertise to people who’ve added “cheese appreciation” to their list of interests in their Facebook profile.</p>
+
+        <p>The beauty of it is that you can connect with customers before they start to look for your product—or before they want it!.Aside from offering advanced targeting features, each social channel has its own characteristics. Instagram, for example, works well for products and lifestyle brands with a strong visual appeal. On the other hand, B2B advertisers prefer to use LinkedIn to reach professionals working in specific industries.</p>
+      </div>
+    </section>
+  </main>
+  <button  id="myBtn" title="Go to top">Scroll Back to top</button>
+
+  <footer class="page__footer">
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+</html>
